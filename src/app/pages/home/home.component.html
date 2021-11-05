@@ -1,5 +1,11 @@
 <ng-container *ngIf="(data$ | async) as profile">
-  <app-card [title]="profile.name">
+  <app-card>
+    <app-card-header>
+      <div>
+        <h1>{{ profile.name }}</h1>
+        <h5>{{ profile.headline }}</h5>
+      </div>
+    </app-card-header>
     <p>
       {{ profile?.bio }}
     </p>

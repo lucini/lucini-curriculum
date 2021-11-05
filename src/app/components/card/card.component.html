@@ -1,8 +1,10 @@
 <div class="card">
-    <h2 class="card__titlte">{{title}}</h2>
-    <p class="card__description">
-       <ng-content></ng-content>
-    </p>
-    <div class="card__footer">
-    </div>
+  <ng-content select="app-card-header"></ng-content>
+  <h2 *ngIf="title?.length" class="card__titlte">{{title}}</h2>
+  <p class="card__description">
+    <ng-content></ng-content>
+  </p>
+  <div class="card__footer">
+    <ng-content select="div[role=footer]"></ng-content>
+  </div>
 </div>
