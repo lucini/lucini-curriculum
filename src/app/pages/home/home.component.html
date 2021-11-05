@@ -1,0 +1,7 @@
+<ng-container *ngIf="(data$ | async) as profile">
+  <app-card [title]="profile.name">
+    <p>
+      {{ profile?.bio }}
+    </p>
+  </app-card>
+</ng-container>

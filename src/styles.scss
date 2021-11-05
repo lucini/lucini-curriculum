@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import 'variables';
+
+:root {
+    background-color: rgb(68, 68, 68);
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Dongle', 'Roboto', sans-serif;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
