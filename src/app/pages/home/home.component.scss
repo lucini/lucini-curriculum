@@ -1,4 +1,43 @@
-h1, h5 {
-    margin: 0;
-    padding: 0;
+@import '../../../variables';
+
+h1,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.profile__photo {
+  position: relative;
+  top: -50px;
+  left: 40vw;
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  box-shadow: --box-shadow;
+}
+
+.skill {
+  display: flex;
+  list-style: none;
+}
+
+.skill__item {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  min-width: 100px;
+  text-align: center;
+  vertical-align: center;
+  cursor: pointer;
+  transition: all .8s ease-in-out;
+  background: rgb(71, 34, 195);
+  background: linear-gradient(0deg, rgba(71, 34, 195, 1) 0%, rgba(188, 45, 253, 1) 100%);
+  color: #FFF;
+  font-weight: 700;
+}
+
+.skill__item:hover {
+  background-color: #ccc;
+  transform: rotate(360deg);
 }

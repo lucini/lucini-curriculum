@@ -1,6 +1,7 @@
 <ng-container *ngIf="(data$ | async) as profile">
   <app-card>
     <app-card-header>
+      <img class="profile__photo" src="../../../assets/img/profile_photo.jpg" alt="Profile Photo">
       <div>
         <h1>{{ profile.name }}</h1>
         <h5>{{ profile.headline }}</h5>
@@ -9,5 +10,10 @@
     <p>
       {{ profile?.bio }}
     </p>
+    <div role="footer">
+      <ul class="skill">
+        <li class="skill__item" *ngFor="let skill of profile?.skills">{{ skill.name}}</li>
+      </ul>
+    </div>
   </app-card>
 </ng-container>
